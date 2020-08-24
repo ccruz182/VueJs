@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>03 - Example</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+</head>
+
+<body>
+    <div id="app" class="container">
+        <h3>Original: {{mensaje}}</h3>
+        <h3>Invertido: {{invertido}}</h3>
+
+        <div class="field">
+            <div class="control">
+                <input class="input" type="text" placeholder="Mensaje" v-model="mensaje">
+            </div>
+        </div>
+
+        <hr />
+        <button class="button is-small is-danger is-outlined" @click="valorProgreso--">-</button>
+        <span>{{valorProgreso}}</span>
+        <button class="button is-small is-success is-outlined" @click="valorProgreso++">+</button>
+        <br />
+        <progress class="progress " :class="claseProgreso" :value="valorProgreso" max="100">45%</progress>
+    </div>
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src='03.js'></script>
+</body>
+
+</html>

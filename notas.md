@@ -1,0 +1,2 @@
+# Vuex
+Es una librería / patrón para el manejo de estado en aplicaciones Vue. Funge como una *store* centralizada para todos los componentes en la aplicación, con reglas que aseguren que el estado solo puede ser mutado en un modo predecible.
